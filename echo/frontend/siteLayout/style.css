@@ -1,0 +1,175 @@
+/*desktop*/
+/*clean up CSS!!! */
+/*do something with sidebar in portrait mode...*/
+
+/* style reset */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 18px;
+  font-family: 'Lora', serif;
+  height: 100%;
+}
+
+body {
+  background-color: #52D1DC;
+  color: #363537;
+  position: relative;
+  height: 100%;
+}
+
+.aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.aligner-item {
+  flex: 1;
+}
+
+#sidebar {
+  position: fixed;
+  left: 0;
+
+  flex-direction: column;
+  background-color: #FFF8F0;
+  box-shadow: 2px 1px 15px #8D8E8E;
+}
+
+#logotype {
+  width: 100%;
+  margin: 0.2em 0 0.2em 0;
+  align-self: flex-start;
+  text-align: center;
+  text-decoration: underline;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 3em;
+  background-color: #FFD740;
+}
+
+#group {
+  margin: 0.1em 0 0.1em 0;
+}
+
+#logout {
+  margin-top: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h4 {
+  width: 75%;
+  padding: 0.2em 0 0.2em 0;
+  border-bottom: 1px solid #363537;
+  text-align: left;
+  margin-bottom: 0.2em;
+}
+
+button{
+  padding: 0.6em;
+  float: right;
+}
+
+li {
+  padding-left: 0.3em;
+  /*padded left so background color on hover fits full width*/
+  margin-bottom: 0.2em;
+  width: inherit;
+}
+
+.leftcol{
+  width: 18%;
+  max-width: 250px;
+  height: 100%;
+  padding: 0 1% 0 1%;
+  display: inline-flex;
+  float:left;
+  text-align: left;
+  margin-left: 1%;
+
+  position: relative;
+}
+
+#rightcol div {
+  background-color: #FFF8F0;
+  width: 90%;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 1%;
+  padding:1%;
+
+  max-width:1000px;
+
+  box-shadow: 2px 1px 15px #8D8E8E;
+}
+
+#post{
+
+}
+
+#post h2{
+  margin-bottom: 0.2em;
+  text-align: center;
+}
+
+#rightcol{
+  width: 79%;
+
+  float:right;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+textarea{
+  outline: none;
+  resize: none;
+  width: 98%;
+  padding: 1%;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/*hack to get bottom section off of the absolute bottom of the flex*/
+#logout section {
+  padding-bottom: 0.2em;
+}
+
+li:hover {
+  background-color: #FFD740;
+}
+
+
+/*exclusive phone styles:
+future: collapse sidebar in mobile
+*/
+
+@media screen and (max-width: 479px) {
+  html {
+    font-size: 12px;
+  }
+
+  #sidebar{
+    margin: 0;
+    display: none;
+  }
+
+  #rightcol{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/*tablet styles*/
+@media screen and (max-width: 768px) {
+  html{
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,13 @@
+now
+show number of ppl in group
+clean up all dependencies into common
+get started on basic FE
+
+in future
+add capicha to login/create space form to prevent spam
+add email logout/login option OR sms with 2 factor
+
+bugs
+need some way to stop user from joining a group they're already in!
+groupList not being quite valid may crop up later...
+add unicode sanitation to everything EVERYTHING

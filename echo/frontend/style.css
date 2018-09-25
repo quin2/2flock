@@ -1,0 +1,61 @@
+/*desktop + tablet styles*/
+html{
+  font-size: 18px;
+
+  font-family: 'Fira Sans', sans-serif;
+}
+
+html, body{
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+body{
+  background-image: url(flock2.svg);
+  background-size: 110%; /*image cuts off on edges otherwise*/
+  background-position: center;
+
+  background-color: #52D1DC;
+  color: #363537;
+}
+
+.aligner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+}
+
+.aligner-item{
+  flex:1;
+}
+
+.announce{
+  width:100%;
+  height:auto;
+
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2em;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+
+  background-color: #FBFEF9;
+
+  border-bottom: 2px solid #8D8E8E;
+}
+
+/*exclusive phone styles*/
+@media screen and (max-width: 479px) {
+  html{
+    font-size: 12px;
+  }
+
+  .announce{
+    background-color: red;
+  }
+}
